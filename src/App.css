@@ -1,7 +1,19 @@
 .App {
-  text-align: center;
+  text-align: left;
+  background-color: rgb(255, 136, 0);
 }
-
+.Accordion {
+  background-color: rgb(172, 108, 108);
+}
+.AccordionToggle{
+  color: rgb(1, 34, 1);
+  
+}
+.CardHeader {
+  background-color: rgb(132, 175, 169);
+  font-size: large;
+  
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
