@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/ed-grocerylist/static/css/main.14fcbcf3.chunk.css",
+    "main.js": "/ed-grocerylist/static/js/main.aae8bca3.chunk.js",
+    "main.js.map": "/ed-grocerylist/static/js/main.aae8bca3.chunk.js.map",
+    "runtime-main.js": "/ed-grocerylist/static/js/runtime-main.2e3c9d24.js",
+    "runtime-main.js.map": "/ed-grocerylist/static/js/runtime-main.2e3c9d24.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/ed-grocerylist/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.7174ccde.chunk.js": "/ed-grocerylist/static/js/2.7174ccde.chunk.js",
+    "static/js/2.7174ccde.chunk.js.map": "/ed-grocerylist/static/js/2.7174ccde.chunk.js.map",
+    "index.html": "/ed-grocerylist/index.html",
+    "precache-manifest.acf33727479365358283d2ac7b8ffebf.js": "/ed-grocerylist/precache-manifest.acf33727479365358283d2ac7b8ffebf.js",
+    "service-worker.js": "/ed-grocerylist/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/ed-grocerylist/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.14fcbcf3.chunk.css.map": "/ed-grocerylist/static/css/main.14fcbcf3.chunk.css.map",
+    "static/js/2.7174ccde.chunk.js.LICENSE.txt": "/ed-grocerylist/static/js/2.7174ccde.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2e3c9d24.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.7174ccde.chunk.js",
+    "static/css/main.14fcbcf3.chunk.css",
+    "static/js/main.aae8bca3.chunk.js"
+  ]
+}
