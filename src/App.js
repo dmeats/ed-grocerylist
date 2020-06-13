@@ -225,12 +225,12 @@ function App() {
             </Card>
             <Card>
               <Accordion.Toggle as={Card.Header} eventKey="16" className='CardHeader'>
-              <NumberofItems cat='Sandwich items'/>
+              <NumberofItems cat='Sandwich'/>
               </Accordion.Toggle>
               <Accordion.Collapse eventKey="16">
                 <Card.Body>
                   <ListGroup>
-                      <List cat='Sandwich items'/>
+                      <List cat='Sandwich'/>
                   </ListGroup>
                 </Card.Body>
               </Accordion.Collapse>
