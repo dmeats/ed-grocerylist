@@ -25,7 +25,8 @@ function App() {
         <h1> &nbsp; E & D Grocery list</h1>
         
         <Accordion >
-        <Card>
+        
+            <Card>
               <Accordion.Toggle as={Card.Header} eventKey="0" className='CardHeader'>
 
               <NumberofItems cat='Bread'/>
@@ -38,6 +39,7 @@ function App() {
                 </Card.Body>
               </Accordion.Collapse>
             </Card>
+         
             <Card>
               <Accordion.Toggle as={Card.Header} eventKey="1" className='CardHeader'>
 
