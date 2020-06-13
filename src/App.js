@@ -273,7 +273,7 @@ function App() {
             </Card>
 
         </Accordion>
-
+        <h1> &nbsp; Thankyou !!!</h1>
 
       </div>
     </APPLContext.Provider>
