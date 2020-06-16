@@ -628,5 +628,19 @@
 		"Catorgory" : "Snacks",
 		"qty" : "1",
 		"YesNo" : "1"
+	},
+	{
+		"FoodItemID" : 91,
+		"FoodItem" : "popcorn",
+		"Catorgory" : "Cleaning",
+		"qty" : "1",
+		"YesNo" : "1"
+	},
+	{
+		"FoodItemID" : 92,
+		"FoodItem" : "sugar",
+		"Catorgory" : "Spice",
+		"qty" : "1",
+		"YesNo" : "1"
 	}
 ]

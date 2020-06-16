@@ -11,15 +11,143 @@ import Badge from 'react-bootstrap/Badge';
 
 
 import './App.css';
-export const APPLContext = React.createContext()
+export const APPLContext = React.createContext({
+  //Message: ' Thank you for visiting my steampunk inspired website',
+  Breadcntr: '0',
+  CHBreadcntr: () => {},
+  Meatcntr: '0',
+  CHMeatcntr: () => {},
+  Cheesecntr: '0',
+  CHCheesecntr: () => {},
+  FresVegcntr: '0',
+  CHFresVegcntr: () => {},
+  FresFruitcntr: '0',
+  CHFresFruitcntr: () => {},
+  Medicinescntr: '0',
+  CHMedicinescntr: () => {},
+  Dairyscntr: '0',
+  CHDairyscntr: () => {},
+  Cleaningcntr: '0',
+  CHCleaningcntr: () => {},
+  Pastacntr: '0',
+  CHPastacntr: () => {},
+  Saucescntr: '0',
+  CHSaucescntr: () => {},
+  Ricecntr: '0',
+  CHRicecntr: () => {},
+  Soupcntr: '0',
+  CHSoupcntr: () => {},
+  Bakingcntr: '0',
+  CHBakingcntr: () => {},
+  Spicecntr: '0',
+  CHSpicecntr: () => {},
+  Breakfastcntr: '0',
+  CHBreakfastcntr: () => {},
+  Condimentscntr: '0',
+  CHCondimentscntr: () => {},
+  Sandwichcntr: '0',
+  CHSandwichcntr: () => {},
+  Snackscntr: '0',
+  CHSnackscntr: () => {},
+  Beveragecntr: '0',
+  CHBeveragecntr: () => {},
+  FreezerSectioncntr: '0',
+  CHFreezerSectioncntr: () => {},
+  //ChangeMessage: () => {},
+  //  ContactSlideStatus: () => {},
+});
+
 
 function App() {
-
-  const [data, setdata] = useState(grocerylist)
  
+  //const [Message, setMessage] = useState(' Thank you for visiting my steampunk inspired website which is under constant construction')
+  const [data, setdata] = useState(grocerylist)
+  const [Breadcntr, setBreadcntr] = useState('0')
+  const [Meatcntr, setMeatcntr] = useState('0')
+  const [Cheesecntr, setCheesecntr] = useState('0')
+  const [FresVegcntr, setFresVegcntr] = useState('0')
+  const [FresFruitcntr, setFresFruitcntr] = useState('0')
+  const [Medicinescntr, setMedicinescntr] = useState('0')
+  const [Dairycntr, setDairycntr] = useState('0')
+  const [Cleaningcntr, setCleaningcntr] = useState('0')
+  const [Pastacntr, setPastacntr] = useState('0')
+  const [Saucescntr, setSaucescntr] = useState('0')
+  const [Ricecntr, setRicecntr] = useState('0')
+  const [Soupcntr, setSoupcntr] = useState('0')
+  const [Bakingcntr, setBakingcntr] = useState('0')
+  const [Spicecntr, setSpicecntr] = useState('0')
+  const [Breakfastcntr, setBreakfastcntr] = useState('0')
+  const [Condimentscntr, setCondimentscntr] = useState('0')
+  const [Sandwichcntr, setSandwichcntr] = useState('0')
+  const [Snackscntr, setSnackscntr] = useState('0')
+  const [Beveragecntr, setBeveragecntr] = useState('0')
+  const [FreezerSectioncntr, setFreezerSectioncntr] = useState('0')
+  
   return (
 
-    <APPLContext.Provider value = {{data}}>
+    <APPLContext.Provider value = {{data,
+    Breadcntr,
+    setBreadcntr,
+    CHBreadcntr: Breadcntr => setBreadcntr(Breadcntr),
+    Meatcntr,
+    setMeatcntr,
+    CHMeatcntr: Meatcntr => setMeatcntr(Meatcntr),
+    Cheesecntr,
+    setCheesecntr,
+    CHCheesecntr: Cheesecntr => setCheesecntr(Cheesecntr),
+    FresVegcntr,
+    setFresVegcntr,
+    CHFresVegcntr: FresVegcntr => setFresVegcntr(FresVegcntr),
+    FresFruitcntr,
+    setFresFruitcntr,
+    CHFresFruitcntr: FresFruitcntr => setFresFruitcntr(FresFruitcntr),
+    Medicinescntr,
+    setMedicinescntr,
+    CHMedicinescntr: Medicinescntr => setMedicinescntr(Medicinescntr),
+    Dairycntr,
+    setDairycntr,
+    CHDairycntr: Dairycntr => setDairycntr(Dairycntr),
+    Cleaningcntr,
+    setCleaningcntr,
+    CHCleaningcntr: Cleaningcntr => setCleaningcntr(Cleaningcntr),
+    Pastacntr,
+    setPastacntr,
+    CHPastacntr: Pastacntr => setPastacntr(Pastacntr),
+    Saucescntr,
+    setSaucescntr,
+    CHSaucescntr: Saucescntr => setSaucescntr(Saucescntr),
+    Ricecntr,
+    setRicecntr,
+    CHRicecntr: Ricecntr => setRicecntr(Ricecntr),
+    Soupcntr,
+    setSoupcntr,
+    CHSoupcntr: Soupcntr => setSoupcntr(Soupcntr),
+    Bakingcntr,
+    setBakingcntr,
+    CHBakingcntr: Bakingcntr => setBakingcntr(Bakingcntr),
+    Spicecntr,
+    setSpicecntr,
+    CHSpicecntr: Spicecntr => setSpicecntr(Spicecntr),
+    Breakfastcntr,
+    setBreakfastcntr,
+    CHBreakfastcntr: Breakfastcntr => setBreakfastcntr(Breakfastcntr),
+    Condimentscntr,
+    setCondimentscntr,
+    CHCondimentscntr: Condimentscntr => setCondimentscntr(Condimentscntr),
+    Sandwichcntr,
+    setSandwichcntr,
+    CHSandwichcntr: Sandwichcntr => setSandwichcntr(Sandwichcntr),
+    Snackscntr,
+    setSnackscntr,
+    CHSnackscntr: Snackscntr => setSnackscntr(Snackscntr),
+    Beveragecntr,
+    setBeveragecntr,
+    CHBeveragecntr: Beveragecntr => setBeveragecntr(Beveragecntr),
+    FreezerSectioncntr,
+    setFreezerSectioncntr,
+    CHFreezerSectioncntr: FreezerSectioncntr => setFreezerSectioncntr(FreezerSectioncntr),
+    }}>
+      
       <div className="App">
         
         <h1> &nbsp; E & D Grocery list</h1>
