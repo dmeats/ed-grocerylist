@@ -9,16 +9,14 @@ const NumberofItems = (props) => {
     const {cat} = props
     const aPPLContext = useContext(APPLContext)
     const Refitems = useRef(0);
-    
     const RefCat = useRef(cat)
    
-    
    
     //let itemqty = []
    
     let i = 1
     let insidecntr = 1
-   
+   // loops through the whole list of food items in the list and counts all items in each catorogory
     for (i = 1; i < aPPLContext.data.length; i++) {
         if(aPPLContext.data[i].Catorgory===RefCat.current && aPPLContext.data[i].YesNo==='1'){
           insidecntr = insidecntr + 1
@@ -28,8 +26,9 @@ const NumberofItems = (props) => {
     let items = insidecntr
     items = items-1
     Refitems.current  = items
+    console.log(Refitems.current)
     
-   
+   //sets up counters for when items or checked off the list
     const loadcntrs = () =>{
     if(RefCat.current === 'Bread'){
         let Breadcntr = ''
@@ -116,13 +115,17 @@ const NumberofItems = (props) => {
 useEffect(() => {
     loadcntrs();
   }, []);
-        
-  if(RefCat.current === 'Bread'){
+  
+  if(Refitems.current === 0 ){
+    return(
+        null
+ )}           
+  if(RefCat.current === 'Bread' ){
         return(
             <h2>{cat} items: <Badge variant="warning">{Refitems.current}</Badge>
              <Badge variant="info">{aPPLContext.Breadcntr}</Badge>
             </h2>
-     )
+        )
         }
         if(RefCat.current === 'Meat'){
             return(
@@ -221,24 +224,25 @@ useEffect(() => {
                      <Badge variant="info">{aPPLContext.Sandwichcntr}</Badge>
                     </h2>
              )}
+             if(RefCat.current === 'Snacks'){
+                return(
+                    <h2>{cat} items: <Badge variant="warning">{Refitems.current}</Badge>
+                     <Badge variant="info">{aPPLContext.Snackscntr}</Badge>
+                    </h2>
+             )}
              if(RefCat.current === 'Beverage'){
                 return(
                     <h2>{cat} items: <Badge variant="warning">{Refitems.current}</Badge>
                      <Badge variant="info">{aPPLContext.Beveragecntr}</Badge>
                     </h2>
-             )}if(RefCat.current === 'Freezer Section'){
+             )}if(RefCat.current === 'Freezer Section' ){
                 return(
                     <h2>{cat} items: <Badge variant="warning">{Refitems.current}</Badge>
                      <Badge variant="info">{aPPLContext.FreezerSectioncntr}</Badge>
                     </h2>
-             )}
-
-             else {
-         return(
-            <h2>{cat} items: <Badge variant="warning">{Refitems.current}</Badge>
+             )} 
+                  
              
-            </h2>
-           )}
                 
              
            

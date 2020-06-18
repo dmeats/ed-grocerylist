@@ -13,6 +13,7 @@ const List = (props) => {
     const aPPLContext = useContext(APPLContext)
     const isdone = useRef('not-done')
     const itemsobj = [];
+    //setup counters for each catorgory
     const RefLiBreadcntr = useRef(aPPLContext.Breadcntr)
     const RefLiMeatcntr = useRef(aPPLContext.Meatcntr)
     const RefLiCheesecntr = useRef(aPPLContext.Cheesecntr)
@@ -56,7 +57,7 @@ const List = (props) => {
       } 
     let items = insidecntr
     
-    //builds new json object for food items and qtys
+    //builds new json object for food items and qtys for each catorgory
    
 
     for (let i = 0; i < items; i++) {
@@ -96,6 +97,7 @@ const List = (props) => {
         );
       }
 
+      // Logic to scratch off item off the list in each catorogy
     const completeTodo = index => {
         const newTodos = [...todos]
        // console.log(index)
@@ -107,6 +109,7 @@ const List = (props) => {
         delete newTodos[0]
         setTodos(newTodos);
         
+        //increments a counter when item is scratched off the list with in each catorgory
         if (cat === 'Bread'){
               if (newTodos[index].isCompleted === true){
                 RefLiBreadcntr.current = RefLiBreadcntr.current - 1

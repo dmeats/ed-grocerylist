@@ -53,8 +53,7 @@ export const APPLContext = React.createContext({
   CHBeveragecntr: () => {},
   FreezerSectioncntr: '0',
   CHFreezerSectioncntr: () => {},
-  //ChangeMessage: () => {},
-  //  ContactSlideStatus: () => {},
+  
 });
 
 
